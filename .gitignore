@@ -6,6 +6,7 @@ __pycache__/
 # Virtual Environment
 venv/
 env/
+luna/
 
 # Data and models (assuming you don't want to track these in Git)
 data/
