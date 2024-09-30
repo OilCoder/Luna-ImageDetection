@@ -2,6 +2,9 @@ import os
 from rename_files import rename_files
 from verify_file_names import verify_file_names
 from count_tool_categories import count_tool_categories
+from train import train_model
+from evaluate import evaluate_model
+from predict import predict_all_images
 
 def main():
     print("Luna-ImageDetection: Slickline Tool Recognition Project")
@@ -22,8 +25,20 @@ def main():
     print("-----------------------------------------------------------")
     count_tool_categories()
     
+    print("\nStep 4: Training the model")
+    print("--------------------------")
+    train_model()
+    
+    print("\nStep 5: Evaluating the model")
+    print("----------------------------")
+    evaluate_model()
+    
+    print("\nStep 6: Predicting on all images")
+    print("--------------------------------")
+    predict_all_images()
+    
     print("\nAll steps completed successfully.")
-    print("TODO: Implement image recognition functionality")
+    print("\nTo run the Streamlit app, use: python src/run_app.py")
 
 if __name__ == "__main__":
     main()

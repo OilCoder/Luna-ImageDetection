@@ -27,7 +27,15 @@ This project aims to recognize slickline tools in unlabeled photos using machine
 
 ## Usage
 
-[Usage instructions to be added as the project develops]
+1. To prepare data, train the model, and evaluate:
+   ```
+   python src/main.py
+   ```
+
+2. To run the Streamlit app for predictions:
+   ```
+   python src/run_app.py
+   ```
 
 ## Contributing
 
