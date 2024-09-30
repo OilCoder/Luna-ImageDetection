@@ -11,6 +11,9 @@ env/
 data/
 models/
 
+# Image folder
+images/
+
 # IDEs
 .vscode/
 .idea/
