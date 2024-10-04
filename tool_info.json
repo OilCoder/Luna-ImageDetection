@@ -1,0 +1,191 @@
+{
+    "Pulling Tools": {
+        "description": "Pulling tools are used to retrieve objects from the wellbore, such as fish or plugs.",
+        "common_tools": ["GR Type Pulling Tool", "GS Type Pulling Tool", "SB Type Pulling Tool"],
+        "use_case": "Typically used in wireline and slickline operations to recover wellbore equipment.",
+        "key_features": ["Secure catch mechanism", "Available in various sizes", "Can be run in tension"],
+        "materials": "Made from high-grade steel for durability under high tension.",
+        "technical_specs": "Standard sizes range from 1.5 to 3 inches, with pressure ratings up to 15,000 psi.",
+        "applications": ["Wireline operations", "Slickline operations", "Fishing operations"]
+    },
+    "Joints and Connectors": {
+        "description": "Joints and connectors link different sections of the tool string or equipment.",
+        "common_tools": ["Knuckle Joint", "Swivel Joint", "Quick Joint"],
+        "use_case": "Used to provide flexibility or connect sections of a tool string or other equipment.",
+        "key_features": ["Swivel for flexibility", "Quick connection", "Rotating joints"],
+        "materials": "Usually made from durable metals like stainless steel or alloys.",
+        "technical_specs": "Varying sizes and load capacities based on application.",
+        "applications": ["Tool string connection", "Wellbore interventions", "Directional drilling"]
+    },
+    "Pressure Control Systems and Equipment": {
+        "description": "These tools maintain well integrity and prevent blowouts in high-pressure environments.",
+        "common_tools": ["BOP", "Grease Injection Head", "Stuffing Box"],
+        "use_case": "Used during well intervention and to prevent blowouts by managing well pressure.",
+        "key_features": ["Sealing mechanisms", "High-pressure tolerance", "Controlled pressure release"],
+        "materials": "High-grade steel with corrosion resistance.",
+        "technical_specs": "Pressure ratings up to 15,000 psi.",
+        "applications": ["Wellbore pressure management", "Blowout prevention", "Well completion"]
+    },
+    "Centralizers": {
+        "description": "Centralizers ensure that tools remain centered within the wellbore.",
+        "common_tools": ["Fluted Centralizer", "Roller Centralizer", "Bow Spring Centralizer"],
+        "use_case": "Used to ensure even distribution of cement or fluids by keeping tools centered.",
+        "key_features": ["Centering mechanism", "Flexible or rigid body", "High durability"],
+        "materials": "Made from steel or alloys for strength.",
+        "technical_specs": "Variety of sizes for different casing sizes.",
+        "applications": ["Cementing operations", "Logging operations", "Wellbore preparation"]
+    },
+    "Jars (Hydraulic or Mechanical)": {
+        "description": "Jars deliver a strong impact or jarring force to release stuck tools.",
+        "common_tools": ["Hydraulic Jar", "Mechanical Jar", "Spring Jar"],
+        "use_case": "Used in fishing operations to apply impact and release stuck tools or equipment.",
+        "key_features": ["Controlled jarring mechanism", "Can deliver heavy impact force"],
+        "materials": "Typically made from steel or other high-strength alloys.",
+        "technical_specs": "Jarring force is adjustable depending on the tool string size.",
+        "applications": ["Fishing operations", "Tool retrieval", "Well interventions"]
+    },
+    "Bailers": {
+        "description": "Bailers are used to remove debris, sand, or fluid from the wellbore.",
+        "common_tools": ["Sand Pump Bailer", "Sample Bailer", "Hydrostatic Bailer"],
+        "use_case": "Used to clean or sample materials from the bottom of a wellbore.",
+        "key_features": ["Pump mechanism", "Debris and fluid collection"],
+        "materials": "Typically made from high-grade metals to withstand well conditions.",
+        "technical_specs": "Capacity depends on the size of the bailer.",
+        "applications": ["Well cleaning", "Sampling", "Wellbore debris removal"]
+    },
+    "Fishing Tools": {
+        "description": "Fishing tools retrieve objects lost or stuck in the wellbore.",
+        "common_tools": ["Overshot", "Fishing Spear", "Releasable Overshot"],
+        "use_case": "Used to recover objects such as broken or stuck tools from the wellbore.",
+        "key_features": ["Secure catching mechanism", "Releasable option for stuck tools"],
+        "materials": "Made from high-strength steel or alloys.",
+        "technical_specs": "Various sizes and load capacities based on operation.",
+        "applications": ["Fishing operations", "Well interventions", "Tool retrieval"]
+    },
+    "Gauge Cutters": {
+        "description": "Gauge cutters are used to clear debris or paraffin buildup inside the wellbore.",
+        "common_tools": ["Paraffin Cutter", "Gauge Cutter", "Scratcher"],
+        "use_case": "Used to cut through obstructions and restore the wellbore diameter.",
+        "key_features": ["Sharp cutting edges", "Rotary motion"],
+        "materials": "Hardened steel for durability.",
+        "technical_specs": "Cutting sizes vary depending on wellbore size.",
+        "applications": ["Wellbore cleaning", "Obstruction removal", "Paraffin cutting"]
+    },
+    "Spoolers": {
+        "description": "Spoolers handle and manage wireline cables during operations.",
+        "common_tools": ["Cable Spooler", "Spooling Unit", "Winch"],
+        "use_case": "Used to spool and unspool wireline during logging, intervention, or fishing operations.",
+        "key_features": ["Precision control", "Cable management", "Tension control"],
+        "materials": "Durable materials like steel for long operational life.",
+        "technical_specs": "Capacity and speed depending on the operation and cable size.",
+        "applications": ["Wireline operations", "Logging", "Cable management"]
+    },
+    "Stem Tools": {
+        "description": "Stem tools provide additional weight to the tool string for pushing down on wellbore equipment.",
+        "common_tools": ["Tungsten Stem", "Lead Stem", "Weight Stem"],
+        "use_case": "Used to add weight to tool strings to improve tool penetration or retrieval.",
+        "key_features": ["Heavy weight", "Durable material", "Used in conjunction with pulling tools"],
+        "materials": "Typically made from tungsten or lead for added weight.",
+        "technical_specs": "Weight ranges from several pounds to over 100 pounds depending on use.",
+        "applications": ["Wireline operations", "Slickline operations", "Fishing operations"]
+    },
+    "Running and Shifting Tools": {
+        "description": "Running and shifting tools are used to install or manipulate downhole equipment.",
+        "common_tools": ["Mandrel", "Shifting Tool", "Packer"],
+        "use_case": "Used for running downhole equipment or shifting sleeves within the wellbore.",
+        "key_features": ["High precision control", "Durable mechanisms"],
+        "materials": "Typically made from high-strength alloys for durability.",
+        "technical_specs": "Size and strength vary depending on the tool being installed or shifted.",
+        "applications": ["Completion operations", "Wellbore maintenance", "Downhole equipment manipulation"]
+    },
+    "Magnet Tools": {
+        "description": "Magnet tools retrieve ferrous objects from the wellbore.",
+        "common_tools": ["Skirted Magnet", "Retrieval Magnet", "Catcher Magnet"],
+        "use_case": "Used to retrieve metallic debris or objects stuck in the wellbore.",
+        "key_features": ["High magnetic strength", "Skirted design for better contact"],
+        "materials": "Typically made with high-strength magnets encased in steel.",
+        "technical_specs": "Magnetic pull force varies by size and design.",
+        "applications": ["Fishing operations", "Wellbore cleanup", "Metal retrieval"]
+    },
+    "Perforators and Wellbore Intervention Tools": {
+        "description": "Perforators create openings in casing or tubing to allow fluid flow or wellbore intervention.",
+        "common_tools": ["Tubing Perforator", "Casing Perforator"],
+        "use_case": "Used during well completion or intervention to create flow paths.",
+        "key_features": ["High precision perforation", "Various sizes for different casing"],
+        "materials": "High-strength metals to handle downhole conditions.",
+        "technical_specs": "Perforation size and depth vary based on tool design.",
+        "applications": ["Well completion", "Wellbore intervention", "Casing perforation"]
+    },
+    "Hydraulic Tool Traps": {
+        "description": "Hydraulic tool traps prevent tools from accidentally dropping downhole.",
+        "common_tools": ["Manual Locking Trap", "Hydraulic Control Trap"],
+        "use_case": "Used to catch and hold tools during well interventions.",
+        "key_features": ["Hydraulic control", "Manual locking"],
+        "materials": "Steel or alloy construction for high-strength operations.",
+        "technical_specs": "Can handle large tool strings and various tool sizes.",
+        "applications": ["Well intervention", "Tool string management", "Wireline operations"]
+    },
+    "Gauge Hangers and Pressure Gauges": {
+        "description": "Gauge hangers and pressure gauges monitor and record wellbore pressures.",
+        "common_tools": ["Gauge Hanger", "Pressure Gauge", "Unlatching Tool"],
+        "use_case": "Used for pressure measurement and monitoring during wellbore operations.",
+        "key_features": ["Accurate pressure measurement", "High-pressure tolerance"],
+        "materials": "Made from corrosion-resistant steel or alloys.",
+        "technical_specs": "Pressure ratings up to 15,000 psi depending on gauge.",
+        "applications": ["Pressure monitoring", "Completion operations", "Well integrity"]
+    },
+    "Crossover Tools": {
+        "description": "Crossover tools are used to transition between different sizes or types of tubing or equipment.",
+        "common_tools": ["Crossover Sub", "Cross Over"],
+        "use_case": "Used to connect different tool strings or pieces of equipment with varying sizes or connections.",
+        "key_features": ["Size compatibility", "Durable construction"],
+        "materials": "Made from high-strength steel or alloys.",
+        "technical_specs": "Various size adapters available for different applications.",
+        "applications": ["Tool string management", "Completion operations", "Downhole tool installation"]
+    },
+    "Adapters and Extensions": {
+        "description": "Adapters and extensions are used to lengthen or connect different parts of the tool string.",
+        "common_tools": ["Adapter", "Extension Sub"],
+        "use_case": "Used to extend or adapt tool strings to different configurations.",
+        "key_features": ["Customizable lengths", "Durable design"],
+        "materials": "Typically made from steel or other durable materials.",
+        "technical_specs": "Various lengths and diameters depending on application.",
+        "applications": ["Tool string extension", "Wireline operations", "Well interventions"]
+    },
+    "Hay Pulleys": {
+        "description": "Hay pulleys manage and control cables or lines during slickline or wireline operations.",
+        "common_tools": ["Hay Pulley", "Cable Pulley"],
+        "use_case": "Used to guide cables during wellbore operations.",
+        "key_features": ["Smooth operation", "High load capacity"],
+        "materials": "Made from durable steel or aluminum.",
+        "technical_specs": "Load capacities vary depending on operation.",
+        "applications": ["Wireline operations", "Slickline operations", "Cable management"]
+    },
+    "Torque and Torsion Tools": {
+        "description": "Torque and torsion tools measure or apply rotational force to equipment.",
+        "common_tools": ["Torsion Tester", "Torque Wrench"],
+        "use_case": "Used to apply or measure the torque in downhole equipment or connections.",
+        "key_features": ["High precision", "Adjustable torque settings"],
+        "materials": "Made from high-strength steel for durability.",
+        "technical_specs": "Torque ratings vary by tool size and design.",
+        "applications": ["Completion operations", "Tool installation", "Well interventions"]
+    },
+    "Test Caps": {
+        "description": "Test caps are used to seal or cover openings in equipment for pressure testing.",
+        "common_tools": ["Pressure Test Cap", "Test Plug"],
+        "use_case": "Used during pressure testing to ensure equipment integrity.",
+        "key_features": ["High pressure tolerance", "Leak-proof seal"],
+        "materials": "Typically made from steel or other corrosion-resistant materials.",
+        "technical_specs": "Pressure ratings up to 10,000 psi.",
+        "applications": ["Pressure testing", "Equipment sealing", "Well integrity"]
+    },
+    "Stem Weights": {
+        "description": "Stem weights are used to add weight to a tool string for wellbore penetration or to hold down equipment.",
+        "common_tools": ["Tungsten Stem Weight", "Lead Stem Weight"],
+        "use_case": "Used to stabilize or apply downward force on tools in the wellbore.",
+        "key_features": ["Heavyweight design", "Durable material"],
+        "materials": "Made from tungsten or lead for added weight.",
+        "technical_specs": "Weight ranges vary depending on operation requirements.",
+        "applications": ["Wellbore penetration", "Tool stabilization", "Wireline operations"]
+    }
+}
