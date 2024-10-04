@@ -25,11 +25,12 @@ import os
 import tensorflow as tf
 from PIL import Image
 import numpy as np
+import cv2
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 
-def load_and_augment_data(augmentation_factor=5):
-    images_dir = 'images/'
-    labels_file = 'classified_tool_names.txt'
+def load_and_augment_data(augmentation_factor=10):
+    images_dir = 'Luna-ImageDetection/images/'
+    labels_file = 'Luna-ImageDetection/classified_tool_names.txt'
     
     # Load image file names and labels
     with open(labels_file, 'r') as f:
@@ -38,13 +39,16 @@ def load_and_augment_data(augmentation_factor=5):
     
     # Create an ImageDataGenerator for augmentation
     datagen = ImageDataGenerator(
-        rotation_range=20,
-        width_shift_range=0.2,
-        height_shift_range=0.2,
-        shear_range=0.2,
-        zoom_range=0.2,
-        horizontal_flip=True,
-        fill_mode='nearest'
+        rotation_range=40,           # Rotación de hasta 40 grados
+        width_shift_range=0.2,       # Desplazamiento horizontal del 20%
+        height_shift_range=0.2,      # Desplazamiento vertical del 20%
+        shear_range=0.2,             # Deformación
+        zoom_range=[0.8, 1.2],       # Zoom de entre 80% y 120%
+        horizontal_flip=True,        # Voltear horizontalmente
+        vertical_flip=True,          # Voltear verticalmente
+        brightness_range=[0.8, 1.2], # Variación en brillo
+        channel_shift_range=30.0,    # Desplazamiento de canales de color
+        fill_mode='reflect'          # Cómo rellenar los píxeles vacíos tras la transformación
     )
 
     # Load and augment images and labels

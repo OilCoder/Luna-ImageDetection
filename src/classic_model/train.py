@@ -58,7 +58,7 @@ def train_model(model, train_data, val_data, epochs=500, batch_size=32):
     
     callbacks = [
         tf.keras.callbacks.EarlyStopping(monitor='val_loss', patience=30, restore_best_weights=True),
-        tf.keras.callbacks.ModelCheckpoint('models/classic_model_best.keras', 
+        tf.keras.callbacks.ModelCheckpoint('Luna-ImageDetection/models/classic_model_best.keras', 
                                            monitor='val_accuracy', 
                                            save_best_only=True, 
                                            save_weights_only=False),
@@ -79,7 +79,7 @@ def train_model(model, train_data, val_data, epochs=500, batch_size=32):
               callbacks=callbacks,
               class_weight=class_weights)
     
-    model.save('models/classic_model_final.keras')
+    model.save('Luna-ImageDetection/models/classic_model_final.keras')
 
 def compute_class_weights(train_data):
     class_counts = {}

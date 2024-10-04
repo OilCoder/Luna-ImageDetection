@@ -11,7 +11,7 @@ import sys
 project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(project_root)
 
-from classic_model.data_preparation import load_data
+from classic_model.data_preparation import load_and_augment_data, split_data, preprocess_images
 from classic_model.model import build_model, compile_model
 from classic_model.train import train_model
 
@@ -44,11 +44,11 @@ def load_model_and_labels():
     model_path = os.path.join(project_root, 'models', 'classic_model_final.keras')
     if not os.path.exists(model_path):
         st.warning("Model not found. Training a new model...")
-        data = load_data()
-        num_classes = len(data[2])  # Get the number of unique labels
+        images, labels, unique_labels, label_to_index = load_and_augment_data()
+        num_classes = len(unique_labels)
         model = build_model(num_classes=num_classes)
         compile_model(model)
-        train_data, val_data, _ = split_data(data)
+        train_data, val_data, _ = split_data(images, labels)
         train_data, val_data, _ = preprocess_images(train_data, val_data)
         history = train_model(model, train_data, val_data)
         st.success("Model training completed.")
@@ -56,7 +56,7 @@ def load_model_and_labels():
         model = load_model(model_path)
         
     # Load labels
-    _, _, unique_labels, label_to_index = load_data()
+    _, _, unique_labels, label_to_index = load_and_augment_data()
     
     return model, unique_labels, label_to_index
 
@@ -69,7 +69,7 @@ def preprocess_image(image):
 @st.cache_data
 def load_tool_info():
     try:
-        with open('tool_info.json', 'r') as f:
+        with open('Luna-ImageDetection/tool_info.json', 'r') as f:
             return json.load(f)
     except json.JSONDecodeError:
         st.error("Error loading tool information. The JSON file may be malformed.")

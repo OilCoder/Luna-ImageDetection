@@ -74,7 +74,7 @@ def save_evaluation_results(cm, unique_labels):
     plt.tight_layout()
     plt.ylabel('True label')
     plt.xlabel('Predicted label')
-    plt.savefig('evaluation_results_confusion_matrix.png')
+    plt.savefig('Luna-ImageDetection/evaluation_results_confusion_matrix.png')
     plt.close()
     
     print("Confusion matrix saved as 'evaluation_results_confusion_matrix.png'")

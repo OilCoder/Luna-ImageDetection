@@ -27,7 +27,7 @@ def load_model(model_path='models/classic_model_best.keras'):
     return model
 
 def make_predictions(model, batch_size=32):
-    images_dir = 'images/'
+    images_dir = 'Luna-ImageDetection/images/'
     image_files = os.listdir(images_dir)
     
     images = []
@@ -56,7 +56,7 @@ def make_predictions(model, batch_size=32):
     predicted_labels = tf.argmax(predictions, axis=1)
     
     # Save predictions to a file
-    with open('predictions.txt', 'w') as f:
+    with open('Luna-ImageDetection/predictions.txt', 'w') as f:
         for file_name, label in zip(valid_file_names, predicted_labels):
             f.write(f"{file_name}: {label}\n")
 

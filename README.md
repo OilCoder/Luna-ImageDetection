@@ -4,38 +4,67 @@ This project aims to recognize slickline tools in unlabeled photos using machine
 
 ## Project Structure
 
-- `src/`: Contains the source code for the project
-- `data/`: Directory for storing image data (not tracked by Git)
-- `models/`: Directory for storing trained models (not tracked by Git)
+- `src/`: Contains the source code for the project.
+- `data/`: Directory for storing image data (not tracked by Git).
+- `models/`: Directory for storing trained models (not tracked by Git).
+- `app/`: Streamlit app for tool prediction and visualization of results.
 
-## Setup
+## Setup (Using Docker)
 
 1. Clone the repository:
-   ```
+   ```bash
    git clone https://github.com/OilCoder/Luna-ImageDetection.git
    cd Luna-ImageDetection
    ```
-2. Create a virtual environment (optional but recommended):
+   
+2. Build and run the Docker container:
+   ```bash
+   docker build -t luna-imagedetection .
+   docker run --gpus all -v $(pwd):/workspace -it luna-imagedetection
    ```
-   python -m venv venv
-   source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+
+3. Access the container and navigate to the workspace:
+   ```bash
+   cd /workspace
    ```
-3. Install dependencies:
-   ```
+
+4. Install any additional dependencies if required:
+   ```bash
    pip install -r requirements.txt
    ```
 
 ## Usage
 
-1. To prepare data, train the model, and evaluate:
-   ```
-   python src/main.py
-   ```
+### 1. Data Preparation, Training, and Evaluation
+To prepare data, train the model, and evaluate its performance:
+```bash
+python src/main.py
+```
 
-2. To run the Streamlit app for predictions:
-   ```
-   python src/run_app.py
-   ```
+### 2. Streamlit App for Prediction and Tool Report
+Luna-ImageDetection now includes a **Streamlit** app that allows users to upload an image and receive a prediction along with a detailed report of the predicted tool.
+
+To run the Streamlit app:
+```bash
+streamlit run src/app_streamlit.py
+```
+
+#### Example:
+- **Input**: Upload an image of a slickline tool (e.g., valve, pull tool, etc.).
+- **Output**: The app predicts the type of tool and provides a visual report.
+
+Here are some example predictions:
+
+- **Centralizer Example**:
+  ![Centralizer Tool](centra_example.bmp)
+
+- **Pulling Tool Example**:
+  ![Pulling Tool](pull_exmaple.bmp)
+
+- **Valve Example**:
+  ![Valve Tool](valve_exam.bmp)
+
+The app displays a clear and concise report after processing the image, which is useful for reviewing the model's prediction performance in real-time.
 
 ## Contributing
 
